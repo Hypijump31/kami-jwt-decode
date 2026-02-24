@@ -1,4 +1,4 @@
-﻿# kami-jwt-decode
+# kami-jwt-decode
 
 [![KAMI Plugin](https://img.shields.io/badge/KAMI-plugin-8A2BE2)](https://github.com/Hypijump31/KAMI)
 [![Signed](https://img.shields.io/badge/Ed25519-signed-green)](https://github.com/Hypijump31/kami-registry)
@@ -34,7 +34,13 @@ Returns the decoded header, payload, and individual claims.
 ```bash
 git clone https://github.com/Hypijump31/kami-jwt-decode
 cd kami-jwt-decode
-cargo build --target wasm32-wasip2 --release
+kami build . --release
+```
+
+To also package as plugin.zip:
+
+```bash
+kami build . --release --package
 ```
 
 ## Security
